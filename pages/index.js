@@ -5,7 +5,7 @@ import Main from "../components/Main";
 const Index = () => {
   return (
     <div>
-      <Layout active="home">
+      <Layout active="home" title="Home Page">
         <Main />
       </Layout>
     </div>

@@ -1,67 +1,74 @@
-import React from "react";
+import Link from "next/link";
 
-const Nav = (props) => {
+const Nav = ({ active }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="/">
-        Navbar
-      </a>
-
+      <Link href="/">
+        <a className="navbar-brand">Navbar</a>
+      </Link>
       <div className="collapse navbar-collapse" id="navbarColor02">
         <ul className="navbar-nav mr-auto">
-          {props.active === "home" ? (
+          {active === "home" ? (
             <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/">
+                <a className="nav-link">
+                  Home <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
           ) : (
             <li className="nav-item ">
-              <a className="nav-link" href="/">
-                Home
-              </a>
+              <Link href="/">
+                <a className="nav-link">Home</a>
+              </Link>
             </li>
           )}
 
-          {props.active === "feature" ? (
+          {active === "feature" ? (
             <li className="nav-item active">
-              <a className="nav-link" href="/features">
-                Features <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/features">
+                <a className="nav-link">
+                  Features <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
           ) : (
             <li className="nav-item">
-              <a className="nav-link" href="/features">
-                Features
-              </a>
+              <Link href="/features">
+                <a className="nav-link">Features</a>
+              </Link>
             </li>
           )}
 
-          {props.active === "pricing" ? (
+          {active === "pricing" ? (
             <li className="nav-item active">
-              <a className="nav-link" href="/pricing">
-                Pricing <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/pricing">
+                <a className="nav-link">
+                  Pricing <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
           ) : (
             <li className="nav-item">
-              <a className="nav-link" href="/pricing">
-                Pricing
-              </a>
+              <Link href="/pricing">
+                <a className="nav-link">Pricing</a>
+              </Link>
             </li>
           )}
 
-          {props.active === "about" ? (
+          {active === "about" ? (
             <li className="nav-item active">
-              <a className="nav-link" href="/about">
-                About <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/about">
+                <a className="nav-link">
+                  About <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
           ) : (
             <li className="nav-item">
-              <a className="nav-link" href="/about">
-                About
-              </a>
+              <Link href="/about">
+                <a className="nav-link">About</a>
+              </Link>
             </li>
           )}
         </ul>

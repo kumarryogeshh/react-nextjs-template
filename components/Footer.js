@@ -32,8 +32,9 @@ const Footer = () => {
               <a href="http://ykumar.in" target="_blank">
                 Yogesh Kumar
               </a>
-              .
+              <span> &copy; {new Date().getFullYear()}</span>.
             </p>
+
             <p>
               Code released under the{" "}
               <a
@@ -62,6 +63,13 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <style jsx>
+        {`
+          #footer {
+            height: 60px;
+          }
+        `}
+      </style>
     </div>
   );
 };

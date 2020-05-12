@@ -1,7 +1,7 @@
 {
   "name": "react-nextjs-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate code for  NextJS",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -12,15 +12,24 @@
     "type": "git",
     "url": "git+https://github.com/kumarryogeshh/react-nextjs-template.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nextjs",
+    "reactjs",
+    "boilerplate",
+    "boskysoft",
+    "ykumar.in",
+    "boskysoft.com",
+    "nextjs-boilerplate"
+  ],
+  "author": "Yogesh Kumar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kumarryogeshh/react-nextjs-template/issues"
   },
   "homepage": "https://github.com/kumarryogeshh/react-nextjs-template#readme",
   "dependencies": {
     "next": "^9.3.6",
+    "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
