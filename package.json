@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/kumarryogeshh/react-nextjs-template#readme",
   "dependencies": {
-    "next": "^9.3.6",
+    "next": "^11.1.3",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
